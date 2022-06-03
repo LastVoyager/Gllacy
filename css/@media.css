@@ -1,0 +1,154 @@
+@media (max-width:900px) {
+  
+    .header-container {
+        position: fixed;
+        background-color: #849d8f;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 110px;
+        z-index: 2;
+    }
+    .main-navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .phone {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 340px;
+        margin: 0px auto;
+    }
+    .phone p {
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-right: 10px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .phone a {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    
+    
+    .radio-btn {
+        display: flex;
+        position: relative;
+        margin: 20px 0px 0px 0px;
+        padding: 0px;
+    }
+    .options{
+        display: none;
+    }
+    .header-burger {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+    }
+    .header-burger ::after,
+    .header-burger ::before {
+        content: "";
+        background-color: #f8f7f4;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        transition: all 0.3s ease 0s;
+    }
+    .header-burger ::before{
+        top: 10px;
+    }
+    .header-burger ::after {
+        bottom: 10px;
+    }
+    .header-burger span {
+        position: absolute;
+        background-color: #f8f7f4;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .header-burger.burger-cross span {
+        transform: scale(0);
+       
+    }
+
+    .header-burger.burger-cross::after,
+    .header-burger.burger-cross::before {
+        content: "";
+        background-color: #f8f7f4;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+    }
+    .burger-cross::after {
+       top: 9px;
+        transform: rotate(45deg);
+    }
+    .burger-cross::before{
+        top: 9px;
+        transform: rotate(-45deg);
+    }
+    
+    
+    .options.burger-active {
+        position: absolute;
+        display: block;
+        
+        background-color: #f8f7f4;
+
+        right: 27px;
+        top: 60%;
+        width: 150px;
+        min-height: 300px;
+    }
+    .options .right-option,
+    .options .left-option {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+        min-height: 150px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .options ul li {
+        margin: 0px;
+        text-align: center;
+    }
+    .options a{
+        color: #323232;
+    }
+   
+
+ /* M A I N */
+    main {
+     
+    }
+    .main-container {
+       
+    }
+    .main-container section {
+        margin-left: 0px;
+        right: 0;
+        left: 0;
+        width: 100%;
+    }
+    .main-proposition img {
+        display: none;
+    }
+    .main-proposition h1 {
+        display: inline-block;
+        margin-top: auto;
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
