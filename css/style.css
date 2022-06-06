@@ -9,11 +9,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-
     height: 100%;
     color: #ffffff;
     background-color: #849d8f;
-    margin: 0px;
     padding: 0px;
 }
 
@@ -28,8 +26,7 @@ a {
 .button {
     display: flex;
     justify-content: center;
-    align-items:center;
-    
+    align-items: center;
     font: inherit;
     color: #ffffff;
     font-size: 18px;
@@ -67,14 +64,7 @@ header {
     max-width: 1200px;
     padding-top: 10px;
 }
-.options {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-.header-burger {
-    display: none;
-}
+
 .main-navigation {
     display: flex;
     justify-content: space-between;
@@ -90,7 +80,15 @@ header {
     margin-top: 0px;
     margin-bottom: 0px;
 }
-
+.options {
+    display: flex;
+   
+    justify-content: space-between;
+    width: 100%;
+}
+.header-burger {
+    display: none;
+}
 .left-option li {
     font-size: 16px;
     line-height: 18px;
@@ -108,7 +106,9 @@ header {
 
 
 /* SEARCH */
-
+.search {
+    cursor: pointer;
+}
 .right-option .search {
     position: relative;
 }
@@ -181,6 +181,7 @@ header {
     background-color: #a1b5aa;
     padding: 7px 14px 7px 35px;
     border-radius: 25px 25px 25px 25px;
+    cursor: pointer;
 }
 .enter-button{
     min-width: 14px;
@@ -206,7 +207,9 @@ header {
 
 
 /* CART */
-
+.cart {
+    cursor: pointer;
+}
 .right-option .cart {
     position: relative;
     background-color: #a1b5aa;
@@ -256,6 +259,7 @@ header {
 
 
 /* M A I N */
+/* main-proposition */
 
 .main-container {
     margin: 0px auto;
@@ -270,7 +274,6 @@ header {
     align-items: center;
     position: relative;
 
-   
     min-height: 534px;
     margin: 0px 27px;
 }
@@ -319,9 +322,50 @@ header {
     min-height: 67px;
     margin-top: 30px;
 }
+/* proposition */
+
+.proposition {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 27px 40px 27px;
+    height: auto;
+}
+
+.proposition .left {
+    background-image: url(../img/image_1.jpg);
+    border-radius: 15px 15px 15px 15px;
+    width: 49%;
+    max-height: 230px;
+}
+.proposition .right {
+    background-image: url(../img/image_2.jpg);
+    border-radius: 15px 15px 15px 15px;
+    width: 49%;
+    max-height: 230px;
+}
+.proposition h2 {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 35px;
+    line-height: 41px;
+}
+.proposition p {
+    margin-top: 18px;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 22px;
+}
+.proposition a {
+    margin-bottom: 30px;
+    margin-top: 50px;
+ margin-left: auto;
+ margin-right: 10px;
+}
+   
 
 
-/* H E A D E R pop-ups */
+/* H E A D E R pop-ups*/
 
 
 .header-burger {
