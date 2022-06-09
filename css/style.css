@@ -40,11 +40,7 @@ a {
     border-radius: 30px 30px 30px 30px;
     box-shadow: 0px 1px 3px 0px #ac1000;
 }
-.main-proposition .button:hover {
-    color: #000000;
-    background-image: linear-gradient(#ededed, #ededed); 
-    box-shadow: none;
-}
+
 .button:hover {
     color: #000000;
     background-image: linear-gradient(#ededed, #ededed); 
@@ -322,6 +318,16 @@ header {
     min-height: 67px;
     margin-top: 30px;
 }
+.main-proposition .button:hover {
+    color: #ffffff;
+    background-image: linear-gradient(#f58569, #ed705e);
+    box-shadow: 0px 1px 3px 0px #ac1000; 
+}
+.main-proposition .button:active {
+    color: #ffffff;
+    background-image: linear-gradient(#d74632, #e1613e); 
+    box-shadow: 0px -1px 3px 0px #ac1000;
+}
 /* proposition */
 
 .proposition {
@@ -359,11 +365,157 @@ header {
 .proposition a {
     margin-bottom: 30px;
     margin-top: 50px;
- margin-left: auto;
- margin-right: 10px;
+    margin-left: auto;
+    margin-right: 10px;
 }
    
 
+/* populars */
+.populars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 27px 40px 27px;
+    height: auto;
+}
+.populars div::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/svg/hit.svg);
+    width: 61px;
+    height: 61px;
+}
+
+.populars a {
+    transform: scale(0);
+    margin: 15px auto;
+    width: 202px;
+    height: 46px;
+}
+.populars  a:hover {
+    color: #ffffff;
+    background-image: linear-gradient(#f58569, #ed705e);
+    box-shadow: 0px 1px 3px 0px #ac1000;
+}
+.populars  a:active {
+    color: #ffffff;
+    background-image: linear-gradient(#d74632, #e1613e); 
+    box-shadow: 0px -1px 3px 0px #ac1000;
+}
+
+.populars .price {
+    font-size: 35px;
+    line-height: 41px;
+    margin-top: 216px;
+}
+.populars .description {
+    text-align: center;
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: 20px;
+}
+.popular-1 {
+    position: relative;
+    background-image: url(../img/cream_1.jpg);
+    width: 267px;
+    height: 267px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.popular-2 {
+    position: relative;
+    background-image: url(../img/cream_2.jpg);
+    width: 267px;
+    height: 267px;
+    border-radius: 50%;
+}
+.popular-3 {
+    position: relative;
+    background-image: url(../img/cream_3.jpg);
+    width: 267px;
+    height: 267px;
+    border-radius: 50%;
+}
+.popular-4 {
+    position: relative;
+    background-image: url(../img/cream_4.jpg);
+    width: 267px;
+    height: 267px;
+    border-radius: 50%;
+}
+.populars div:active,
+.populars div:hover {
+    transform: scale(1.1);
+}
+.populars div:hover a {
+    transform: scale(1.1);
+}
+.populars div:hover .description {
+    text-decoration-color: #a9bbb1;
+    text-decoration-line: underline;
+    text-underline-offset: 2px;
+}
+
+/* our-features */
+
+.our-features {
+    background-image: url(../img/wafer.jpg);
+    color: #323232;
+    border-radius: 15px 15px 15px 15px;
+    margin: 100px 27px 27px 27px;
+}
+.our-features div {
+    padding: 30px 24px;
+}
+.our-features h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+.list-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.list-features li {
+    position: relative;
+    margin: 28px 0px 0px 40px;
+}
+.features-1::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/svg/ice-cream.svg);
+    width: 49px;
+    height: 49px;
+    left: -56px;
+    top: -10px;
+}
+.features-2::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/svg/cow.svg);
+    width: 49px;
+    height: 49px;
+    left: -56px;
+    top: -10px;
+}
+.features-3::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/svg/eco.svg);
+    width: 49px;
+    height: 49px;
+    left: -56px;
+    top: -10px;
+}
+.features-4::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/svg/thermometer.svg);
+    width: 49px;
+    height: 49px;
+    left: -56px;
+    top: -10px;
+}
 
 /* H E A D E R pop-ups*/
 

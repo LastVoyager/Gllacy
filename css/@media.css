@@ -2,6 +2,14 @@
     .proposition article {
         min-height: 260px;
     }
+    .populars {
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+    }
+    .populars div {
+        margin-bottom: 80px;
+    }
   }
 @media (max-width:900px) {
   body.lock {
@@ -175,5 +183,6 @@
     .proposition a {
         margin-top: 50px;
         margin-left: 400px;
-     }
+    }
+
 }
