@@ -40,8 +40,17 @@ a {
     border-radius: 30px 30px 30px 30px;
     box-shadow: 0px 1px 3px 0px #ac1000;
 }
-
 .button:hover {
+    color: #ffffff;
+    background-image: linear-gradient(#f58569, #ed705e);
+    box-shadow: 0px 1px 3px 0px #ac1000; 
+}
+.button:active {
+    color: #ffffff;
+    background-image: linear-gradient(#d74632, #e1613e); 
+    box-shadow: 0px -1px 3px 0px #ac1000;
+}
+/*.button:hover {
     color: #000000;
     background-image: linear-gradient(#ededed, #ededed); 
     box-shadow: none;
@@ -428,6 +437,7 @@ header {
     width: 267px;
     height: 267px;
     border-radius: 50%;
+    cursor: pointer;
 }
 .popular-3 {
     position: relative;
@@ -435,6 +445,7 @@ header {
     width: 267px;
     height: 267px;
     border-radius: 50%;
+    cursor: pointer;
 }
 .popular-4 {
     position: relative;
@@ -442,6 +453,7 @@ header {
     width: 267px;
     height: 267px;
     border-radius: 50%;
+    cursor: pointer;
 }
 .populars div:active,
 .populars div:hover {
@@ -567,6 +579,8 @@ header {
 }
 .subscribe-container form button {
     max-width: 131px;
+    margin-left: 15px;
+    margin-right: 5px;
 }
 .subscribe-container form {
     display: flex;
@@ -597,24 +611,46 @@ header {
     width: 100%;
     height: 430px;
 }
+iframe {
+ z-index: -1;
+}
+.map img {
+    position: absolute;
+    margin-top:10%;
+    margin-left: -50%;
+}
 .adress-info {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 
+    font-weight: 400;
     color: #323232;
     background-color:  #fefefe; 
     border-radius: 15px 15px 15px 15px;
     width: 300px;
     height: 300px;
 
-    top: 60%;
-    left: 80%;
+    margin-top: -360px;
+    margin-left: 0%;
 }
+/*.adress-info::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/svg/pin.svg);
+    width: 80px;
+    height: 140px;
+    margin-top:-65%;
+    margin-left: -276%;
+}*/
 .adress-info a {
     width: 253px;
     height: 47px;
+}
+.adress-info p {
+    margin-left: -15%;
 }
 
 /* FOOTER */
@@ -637,6 +673,40 @@ footer .all-about {
 }
 
 
+.social {
+    margin-left: 28px;
+}
+.social li {
+    position: relative;
+    display: block;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgba(194, 206, 199, 1);
+    background-color: rgba(0, 0, 0, 0);
+  
+    top:0;
+    right: 0;
+    margin-right: 11px;
+    pointer-events:none;
+}
+.facebook {
+    position: absolute;
+    content: "";
+    
+    background-image: url(../img/svg/fb.svg);
+    width: 100%;
+    height: 100%;
+  
+}
+.social .instagram {
+    background-image: url(../img/svg/instagram.svg);
+}
+.social .twitter {
+    background-image: url(../img/svg/twitter.svg);
+}
 
 /* H E A D E R drop-down menu */
 .header-burger {

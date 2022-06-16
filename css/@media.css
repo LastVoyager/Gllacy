@@ -155,7 +155,7 @@
      
     }
     .main-container {
-        width: 767px;
+       
     }
     .main-container section {
         margin-left: 0px;
@@ -206,4 +206,9 @@
     .another .subscribe {
         margin-top: 30px;
     }
+    .subscribe-container form {
+        display: flex;
+        justify-content: space-between;
+    }
+   
 }
