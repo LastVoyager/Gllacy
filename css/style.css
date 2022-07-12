@@ -269,7 +269,6 @@ header {
 .main-container {
     margin: 0px auto;
     max-width: 1200px;
-    
 }
 
 .main-proposition {
@@ -287,9 +286,10 @@ header {
     display: block;
     position: absolute;
     z-index: -1;
-    margin: 100px 0px 0px 0px;
+    margin-bottom: auto;
     height: auto;
     max-width: 100%;
+  
 }
 .main-proposition h1 {
     display: inline-block;
@@ -337,8 +337,8 @@ header {
     background-image: linear-gradient(#d74632, #e1613e); 
     box-shadow: 0px -1px 3px 0px #ac1000;
 }
-/* proposition */
 
+/* proposition */
 .proposition {
     display: flex;
     justify-content: space-between;
@@ -378,7 +378,6 @@ header {
     margin-right: 10px;
 }
    
-
 /* populars */
 .populars {
     display: flex;
@@ -396,7 +395,7 @@ header {
 }
 
 .populars a {
-    transform: scale(0);
+    display: none;
     margin: 15px auto;
     width: 202px;
     height: 46px;
@@ -446,6 +445,7 @@ header {
     height: 267px;
     border-radius: 50%;
     cursor: pointer;
+   
 }
 .popular-4 {
     position: relative;
@@ -455,12 +455,13 @@ header {
     border-radius: 50%;
     cursor: pointer;
 }
+
 .populars div:active,
 .populars div:hover {
     transform: scale(1.1);
 }
 .populars div:hover a {
-    transform: scale(1.1);
+    display: flex;
 }
 .populars div:hover .description {
     text-decoration-color: #a9bbb1;
@@ -469,10 +470,8 @@ header {
 }
 
 /* our-features */
-
 .our-features {
     color: #323232;
-
     margin: 100px 27px 27px 27px;
 }
 .our-features div {
@@ -549,7 +548,7 @@ header {
     padding-bottom: 0;
 }
 .news {
-    width: 49%;
+    width: 48%;
     min-height: 220px;
     color: #323232;
     background-image: url(../img/strawberry.jpg);
@@ -559,7 +558,7 @@ header {
     margin: 24px 0px 8px 20px;
 }
 .subscribe {
-    width: 49%;
+    width: 48%;
     min-height: 220px;
     color: #5a5a5a;
     background-image: url(../img/svg/bg-post.svg);
@@ -606,8 +605,7 @@ header {
     border-color: #999999;
 }
 
-/* map */
-
+/* MAP */
 .map {
     position: relative;
     width: 100%;
@@ -622,7 +620,7 @@ iframe {
     margin-left: -50%;
 }
 .adress-info {
-    position: absolute;
+  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -636,7 +634,8 @@ iframe {
     height: 300px;
 
     margin-top: -360px;
-    margin-left: 0%;
+    margin-left: auto;
+    margin-right: 27px;
 }
 /*.adress-info::before {
     position: absolute;

@@ -1,3 +1,10 @@
+
+
+const element = document.getElementsByClassName('left-option');
+
+
+console.log(element);
+
 $(document).ready(function(){
     $('.header-burger').click(function(event){
         $('.options').toggleClass('burger-active');
@@ -5,3 +12,4 @@ $(document).ready(function(){
         $('body').toggleClass('lock');
     });
 }); 
+
