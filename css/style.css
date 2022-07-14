@@ -218,7 +218,7 @@ header {
 .right-option .cart {
     position: relative;
     background-color: #a1b5aa;
-    padding: 7px 25px 7px 50px;
+    padding: 7px 20px 7px 40px;
     border-radius: 25px 25px 25px 25px;
 }
 
@@ -300,7 +300,8 @@ header {
 .radio-btn {
     display: flex;
     position: absolute;
-    margin-right: 94%;
+    left: 0;
+    margin-left: 0px;
     margin-bottom: -395px;
     padding: 0px;
 }
@@ -636,7 +637,8 @@ iframe {
     height: 300px;
 
     margin-top: -360px;
-    margin-left: 0%;
+    margin-right: 27px;
+    right: 0;
 }
 /*.adress-info::before {
     position: absolute;
@@ -779,6 +781,8 @@ footer .all-about {
 }
 
 /* H E A D E R drop-down menu */
+
+
 .header-burger {
     display: none;
 }
@@ -788,6 +792,7 @@ footer .all-about {
     display: inline-block;
     
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -801,11 +806,11 @@ footer .all-about {
 
     min-width: 143px;
     border-radius: 5px 5px 5px 5px;
-    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.5);;
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.5);
     z-index: 1;
 
-    margin-top: 5px;
-    margin-left: -6px;
+    margin-top: 4px;
+    margin-left: 0px;
 }
 .dropdown-content p {
     margin: 11px;
@@ -854,7 +859,10 @@ footer .all-about {
     background-color: transparent;
     padding:  8px 15px 8px 15px;
  
-    text-decoration: underline #9fb3a8;
+    /*text-decoration: underline #9fb3a8;*/
+    text-decoration-color: #9fb3a8;
+    text-decoration-line: underline;
+    text-underline-offset: 1px;
 } 
 /*.dropbtn::after {
     position: absolute;
