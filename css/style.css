@@ -637,13 +637,8 @@ iframe {
     height: 300px;
 
     margin-top: -360px;
-<<<<<<< HEAD
-    margin-left: auto;
-    margin-right: 27px;
-=======
     margin-right: 27px;
     right: 0;
->>>>>>> main
 }
 /*.adress-info::before {
     position: absolute;

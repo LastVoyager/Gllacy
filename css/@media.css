@@ -125,10 +125,6 @@
         transform: rotate(-45deg);
     }
     
-<<<<<<< HEAD
-
-=======
->>>>>>> main
     .options.burger-active {
         position: absolute;
         display: block;
@@ -222,11 +218,7 @@
     }
     .proposition a {
         margin-top: 70px;
-<<<<<<< HEAD
-        margin-left: auto;
-=======
         left:0;
->>>>>>> main
     }
     .our-features div {
         margin: 0px 27px 27px 27px;
@@ -255,8 +247,6 @@
         width: 600px;
     }
 }
-<<<<<<< HEAD
-=======
 @media (max-width:720px) {
     footer .container {
         display: flex;
@@ -275,7 +265,6 @@
         margin-left: 10px;
     }
 }
->>>>>>> main
 @media (max-width:600px) {
     .phone {
         position: absolute;
@@ -323,25 +312,4 @@
         margin: 20px auto;
        
     }
-<<<<<<< HEAD
-
-
-    footer .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    footer .container ul {
-        margin-top: 10px;
-    }
-    footer .developer {
-        display: flex;
-        align-items: center;
-        margin: 10px;
-    }
-    footer .developer p {
-        margin-left: 10px;
-    }
-=======
->>>>>>> main
 }
