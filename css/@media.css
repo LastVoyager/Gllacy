@@ -147,22 +147,28 @@
         padding: 0px;
     }
     .options.burger-active .left-option li {
+        position: relative;
         width: 100%;
-        border: 1px solid black;
         padding: 15px 95px;
+        background-color: #a8c8b7;
     }
-    .options.burger-active a{
+    .options.burger-active .left-option li:nth-child(2n) {background-color: #c8eed9;}
+    .options.burger-active .left-option li:nth-child(2n) .dropbtn {background-color: #c8eed9;}
+
+    .options.burger-active .dropbtn{
         display: inline-block;
-       
+        background-color: #a8c8b7;
         color: #323232;
+        left: 0;
         margin:0px;
         padding: 0px;
         text-decoration: none;
     }
     
     .dropdown-content {
+        position: relative;
         display: none;
-        position: absolute;
+        
         background-color: #f8f7f4;
         text-align: center;
         
@@ -170,15 +176,43 @@
         color: #323232;
         font-size: 14px;
         line-height: 16px;
-    
-        min-width: 190px;
-        border-radius: none;
-        box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.2);
+
+        min-height: 90px;
+        min-width: 290px;
+        border-radius: 0px;
+        box-shadow: none;
+        border-bottom: none;
+        border-top: none;
         z-index: 2;
-    
-        top: 0px;
-        left: 0px;
+        top: 17px;
+        right: 96px;
     }
+    .options.burger-active .dropdown-content a {
+        padding: 10px 40px;
+    }
+    .options.burger-active .dropdown-content p {
+       margin: 0px;
+    }
+
+    .options.burger-active .right-option li {
+        position: relative;
+        width: 100%;
+        padding: 15px 95px;
+        margin: 0px;
+        background-color: #c8eed9;
+        border-radius: 0px;
+    }
+    .options.burger-active .right-option li:nth-child(2n) { background-color: #a8c8b7;}
+    .options.burger-active .right-option li:nth-child(2n) .dropbtn { background-color: #a8c8b7;}
+
+    .options.burger-active .right-option .search-button {
+        margin-top: 0px;
+        max-width: 84px;
+        max-height: 16px;
+        background-color: #c8eed9;
+    }
+
+
 
  /* M A I N */
     main {
@@ -247,6 +281,7 @@
         width: 600px;
     }
 }
+
 @media (max-width:720px) {
     footer .container {
         display: flex;
