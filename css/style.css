@@ -291,7 +291,7 @@ main {
     margin-bottom: auto;
     height: auto;
     max-width: 100%;
-  
+    top:-23%;
 }
 .main-proposition h1 {
     display: inline-block;
