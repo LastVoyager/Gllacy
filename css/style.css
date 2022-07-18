@@ -165,7 +165,7 @@ header {
     background-color: #f8f7f4;
 }
 .search:hover .search-button::after {
-    background-image: url(/img/svg/loupe.svg);
+    background-image: url(../img/svg/loupe.svg);
 }
 .right-option .search-button::after {
     position: absolute;
@@ -195,7 +195,7 @@ header {
 .right-option .enter-button::after {
     position: absolute;
     content: "";
-    background-image: url(/img/svg/entrance.svg);
+    background-image: url(../img/svg/entrance.svg);
     width: 20px;
     height: 19px;
     margin-left: -62px;
@@ -229,7 +229,7 @@ header {
 .right-option .cart-button::after {
     position: absolute;
     content: "";
-    background-image: url(/img/svg/basket.svg);
+    background-image: url(../img/svg/basket.svg);
     width: 20px;
     height: 19px;
     margin-left: -73px;
