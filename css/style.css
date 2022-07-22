@@ -65,6 +65,7 @@ header {
 }
 
 .header-container {
+    position: relative;
     margin: 0px auto;
     max-width: 1200px;
     padding-top: 10px;
@@ -245,11 +246,12 @@ header {
 }
 
 .phone {
-   
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin: 0px 27px 0px 27px;
+    right: 0;
 }
 .phone p {
     margin-bottom: 7px;
@@ -281,7 +283,7 @@ main {
     position: relative;
 
     min-height: 534px;
-    margin: 0px 27px;
+    margin: 47px 27px 0px 27px;
 }
 
 .main-proposition img {
@@ -390,13 +392,6 @@ main {
     margin: 0px 27px 40px 27px;
     height: auto;
 }
-.hit::before {
-    position: absolute;
-    content: "";
-    background-image: url(../img/svg/hit.svg);
-    width: 61px;
-    height: 61px;
-}
 
 .populars a {
     display: none;
@@ -404,7 +399,11 @@ main {
     width: 202px;
     height: 46px;
 }
-.populars  a:hover {
+.populars div:hover a {
+    display: flex;
+}
+
+.populars .good  a:hover {
     color: #ffffff;
     background-image: linear-gradient(#f58569, #ed705e);
     box-shadow: 0px 1px 3px 0px #ac1000;
@@ -418,7 +417,7 @@ main {
 .populars .price {
     font-size: 35px;
     line-height: 41px;
-    margin-top: 216px;
+    padding-top: 210px;
 }
 .populars .description {
     text-align: center;
@@ -426,57 +425,69 @@ main {
     line-height: 21px;
     margin-top: 20px;
 }
-.popular-1 {
-    position: relative;
-    background-image: url(../img/cream_1.jpg);
-    width: 267px;
-    height: 267px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-.popular-2 {
-    position: relative;
-    background-image: url(../img/cream_2.jpg);
-    width: 267px;
-    height: 267px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-.popular-3 {
-    position: relative;
-    background-image: url(../img/cream_3.jpg);
-    width: 267px;
-    height: 267px;
-    border-radius: 50%;
-    cursor: pointer;
-   
-}
-.popular-4 {
-    position: relative;
-    background-image: url(../img/cream_4.jpg);
-    width: 267px;
-    height: 267px;
-    border-radius: 50%;
-    cursor: pointer;
+.populars .good {
+  margin-bottom: 40px;
+  min-height: auto;
 }
 
-.populars div:active,
-.populars div:hover {
-    transform: scale(1.1);
+.populars .good:active,
+.populars .good:hover {
+    min-width: 290px;
+    min-height: 406px;
+    background-color: #9bafa3;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    z-index: -2;
 }
-.populars div:hover a {
-    display: flex;
+/*.populars .good:active,
+.populars .good:hover {
+    min-width: 290px;
+    min-height: 406px;
+    background-color: #9bafa3;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    z-index: -2;
+}*/
+.image {
+    position: relative;
+   
+    width: 266px;
+    height: 266px;
+    border-radius: 50%;
+    margin: 10px auto;
+    cursor: pointer;
+    z-index: 1;
 }
-.populars div:hover .description {
+.hit::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/svg/hit.svg);
+    width: 61px;
+    height: 61px;
+}
+.good-1 {
+    background-image: url(../img/cream_1.png);
+}
+.good-2 {
+    background-image: url(../img/cream_2.png);
+}
+.good-3 {
+    background-image: url(../img/cream_3.png);
+}
+.good-4 {
+    background-image: url(../img/cream_4.png);
+}
+.populars .good:hover .description {
     text-decoration-color: #a9bbb1;
     text-decoration-line: underline;
     text-underline-offset: 2px;
 }
 
 /* our-features */
+
 .our-features {
     color: #323232;
-    margin: 100px 27px 27px 27px;
+    margin: 16px 27px 27px 27px;
 }
 .our-features div {
     background-image: url(../img/wafer.jpg);
@@ -534,6 +545,7 @@ main {
 }
 
 /* another */
+
 .another {
     display: flex;
     justify-content: space-between;
@@ -580,12 +592,13 @@ main {
 }
 .subscribe .subscribe-container p {
     padding-left: 18px;
+    padding-right: 18px;
     font-weight: 400;
 }
 .subscribe-container form button {
     max-width: 131px;
     margin-left: 15px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .subscribe-container form {
     display: flex;
