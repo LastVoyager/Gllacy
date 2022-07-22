@@ -23,6 +23,7 @@ a {
     text-decoration: none;
     color: #ffffff;
 }
+.form-button,
 .button {
     display: flex;
     justify-content: center;
@@ -39,12 +40,15 @@ a {
     border: 0px;
     border-radius: 30px 30px 30px 30px;
     box-shadow: 0px 1px 3px 0px #ac1000;
+    cursor: pointer;
 }
+.form-button,
 .button:hover {
     color: #ffffff;
     background-image: linear-gradient(#f58569, #ed705e);
     box-shadow: 0px 1px 3px 0px #ac1000; 
 }
+.form-button,
 .button:active {
     color: #ffffff;
     background-image: linear-gradient(#d74632, #e1613e); 
@@ -595,7 +599,7 @@ main {
     padding-right: 18px;
     font-weight: 400;
 }
-.subscribe-container form button {
+.subscribe-container form .button {
     max-width: 131px;
     margin-left: 15px;
     margin-right: 10px;
@@ -625,17 +629,28 @@ main {
 /* MAP */
 .map {
     position: relative;
+    overflow:hidden;
     width: 100%;
     height: 430px;
 }
-iframe {
- z-index: -1;
-}
+
 .map img {
     position: absolute;
-    margin-top:10%;
-    margin-left: -50%;
+    top: 22%;
+    left: 47%;
+    width: 80px;
+    height: 140px;
 }
+.map .shadow {
+    position: absolute;
+   
+    background-image: url(../img/shadow.png);
+    top: 30%;
+    left: 50%;
+    width: 182px;
+    height: 110px;
+}
+
 .adress-info {
     position: absolute;
     display: flex;
@@ -663,9 +678,19 @@ iframe {
     margin-top:-65%;
     margin-left: -276%;
 }*/
-.adress-info a {
+.adress-info .form-button {
     width: 253px;
     height: 47px;
+}
+.adress-info .form-button:hover {
+    color: #ffffff;
+    background-image: linear-gradient(#f58569, #ed705e);
+    box-shadow: 0px 1px 3px 0px #ac1000; 
+}
+.adress-info .form-button:active {
+    color: #ffffff;
+    background-image: linear-gradient(#d74632, #e1613e); 
+    box-shadow: 0px -1px 3px 0px #ac1000;
 }
 .adress-info p {
     margin-left: -15%;
@@ -1064,12 +1089,12 @@ footer .all-about {
 }
 
 /*POP-UP*/
-.page-body .popup-show  {
+.page-body .cover  {
     display: none;
     background-color: rgb(105,105,105,0.5);
 }
-.popup-container {
-   
+.show {
+    display: block;
 }
 .popup {
     display: none;
@@ -1083,6 +1108,7 @@ footer .all-about {
     height: 442px; 
     background-color: #f8f7f4;
     border-radius: 10px 10px 10px 10px;
+    z-index: 2;
 }
 .popup article {
     color: #323232;

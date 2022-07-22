@@ -9,7 +9,6 @@
     min-height: 218px;
 }
 
-
 .catalog {
     display: flex;
     flex-wrap: wrap;
@@ -18,15 +17,20 @@
     height: auto;
     width: auto;
     margin: 0px 27px;
+    border-bottom: 1px solid #a9bbb1;
 }
 
-.catalog a {
+.catalog .good a {
     display: none;
     margin: 15px auto;
     width: 202px;
     height: 46px;
 }
-.catalog  a:hover {
+.catalog .good:hover a {
+    display: flex;
+}
+
+.catalog .good  a:hover {
     color: #ffffff;
     background-image: linear-gradient(#f58569, #ed705e);
     box-shadow: 0px 1px 3px 0px #ac1000;
@@ -40,7 +44,7 @@
 .catalog .price {
     font-size: 35px;
     line-height: 41px;
-    margin-top: 216px;
+    padding-top: 210px;
 }
 .catalog .description {
     text-align: center;
@@ -48,16 +52,30 @@
     line-height: 21px;
     margin-top: 20px;
 }
-.catalog div {
-    margin-bottom:80px;
+.catalog .good {
+  margin-bottom: 40px;
+  min-height: auto;
 }
-.good {
+
+.catalog .good:active,
+.catalog .good:hover {
+    min-width: 290px;
+    min-height: 406px;
+    background-color: #9bafa3;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    z-index: -2;
+}
+
+.image {
     position: relative;
    
-    width: 267px;
-    height: 267px;
+    width: 266px;
+    height: 266px;
     border-radius: 50%;
+    margin: 10px auto;
     cursor: pointer;
+    z-index: 1;
 }
 .hit::before {
     position: absolute;
@@ -78,15 +96,7 @@
 .good-4 {
     background-image: url(../img/cream_4.png);
 }
-
-.catalog div:active,
-.catalog div:hover {
-    transform: scale(1.1);
-}
-.catalog div:hover a {
-    display: flex;
-}
-.catalog div:hover .description {
+.catalog .good:hover .description {
     text-decoration-color: #a9bbb1;
     text-decoration-line: underline;
     text-underline-offset: 2px;
@@ -99,8 +109,8 @@
     height: 26px;
     margin-left: auto;
     margin-right: 27px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 .pagination {
     display: flex;
