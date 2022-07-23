@@ -289,9 +289,7 @@ main {
     min-height: 534px;
     margin: 47px 27px 0px 27px;
 }
-
-.main-proposition img {
-    display: block;
+.main-container img {
     position: absolute;
     z-index: -1;
     margin-bottom: auto;
@@ -299,6 +297,14 @@ main {
     max-width: 100%;
     top:-23%;
 }
+.ice-cream-2 { display: none;}
+.ice-cream-3 { display: none;}
+.ice-cream-1 { display: none;}
+   
+.show-image {
+    display: block;
+}
+
 .main-proposition h1 {
     display: inline-block;
     margin-top: 230px;
@@ -354,10 +360,6 @@ input[type="radio"] {
     background-color: #f8f7f4;
 }
 
-/*.main-proposition ul li {
-    margin: 0px;
-    padding-left: 8px;
-}*/
 .main-proposition .button {
     display: flex;
     justify-content: center;
