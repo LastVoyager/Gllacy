@@ -308,21 +308,56 @@ main {
 .radio-btn {
     display: flex;
     position: absolute;
+    justify-content: space-between;
+    width: 80px;
+    height: 30px;
     left: 0;
     margin-left: 0px;
     margin-bottom: -395px;
     padding: 0px;
 }
 
-.main-proposition ul li {
-    margin: 0px;
-    padding-left: 8px;
+input[type="radio"] {
+    height: 21px; 
+    width: 21px;
+    cursor: pointer;
+    z-index: 99;
+    opacity: 0;
 }
-.main-proposition input {
-    height:21px; 
-    width:21px;
+.radio-btn span {
+    position: absolute;
+    background-color:transparent;
+    border: 2px solid #f8f7f4;
+    border-radius: 50%;
+    height: 21px; 
+    width: 21px;
+    overflow: hidden;
+    z-index: 98;
 }
 
+.slider-point-1 + span {
+    margin-left: 0px;
+}
+.slider-point-2 + span {
+    margin-left: 30px;
+}
+.slider-point-3 + span {
+    margin-left: 60px;
+}
+.slider-point-1:checked + span {
+    background-color: #f8f7f4;
+}
+.slider-point-2:checked + span {
+    background-color: #f8f7f4;
+}
+.slider-point-3:checked + span {
+    background-color: #f8f7f4;
+}
+
+/*.main-proposition ul li {
+    margin: 0px;
+    padding-left: 8px;
+}*/
 .main-proposition .button {
     display: flex;
     justify-content: center;
@@ -1170,9 +1205,9 @@ footer .all-about {
     background-color: transparent;
     border: 0;
     cursor: pointer;
-  }
-  .popup-close::before,
-  .popup-close::after {
+}
+.popup-close::before,
+.popup-close::after {
     content: "";
     position: absolute;
    
@@ -1180,10 +1215,11 @@ footer .all-about {
     height: 2px;
     margin-right: 0px;
     background-color: #000000;
-  }
-  .popup-close::before {
+}
+.popup-close::before {
     transform: rotate(45deg);
-  }
-  .popup-close::after {
+}
+.popup-close::after {
     transform: rotate(-45deg);
-  }
+}
+  
