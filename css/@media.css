@@ -11,12 +11,17 @@
     .populars div {
         margin-bottom: 80px;
     }
-    .main-proposition img {
-        height: auto; 
-        width: auto; 
-    }
     .our-features {
         margin: 0px 27px 27px 27px;
+    }
+    .main-container img {
+        position: absolute;
+        z-index: -1;
+       
+        height: auto;
+        width: 100%;
+        top:-570px;
+        left: 50%;
     }
   }
 
@@ -64,12 +69,6 @@
         line-height: 24px;
     }
     
-    .radio-btn {
-        display: flex;
-        position: relative;
-        margin: 20px 0px 0px 0px;
-        padding: 0px;
-    }
     .options{
         display: none; 
     }
@@ -236,12 +235,40 @@
         left: 0;
         width: 100%;
     }
-    .main-proposition img {
-        height: 100%; 
-        max-width: auto; 
-        top: 0px;
-        z-index: -1;
+
+
+
+
+
+    .radio-btn {
+        display: flex;
+        position: absolute;
+        justify-content:center;
+        margin: 20px 0px 0px 0px;
+        padding: 0px;
     }
+    .main-proposition img {
+        position: absolute;
+        z-index: -1;
+       
+        height: auto;
+        width: 100%;
+        top: -270px;
+        left: 50%;
+    }
+    .slider-point-1 + span {
+        margin-left: -60px;
+    }
+    .slider-point-2 + span {
+        margin-left: 0px;
+    }
+    .slider-point-3 + span {
+        margin-left: 60px;
+    }
+
+
+
+    .main-proposition form {margin-bottom: 5%;}
     .main-proposition h1 {
         display: inline-block;
         margin-top: auto;
@@ -336,10 +363,12 @@
     }
     .main-proposition img {
         position: absolute;
-        height: auto; 
-        max-width: auto; 
-        top: 55px;
         z-index: -1;
+       
+        height: auto;
+        width: 100%;
+        top: -160px;
+        left: 50%;
     }
     .main-proposition {
         position: relative;
@@ -357,8 +386,8 @@
         margin-top: auto;
         margin-left: 27px;
         margin-right: 27px;
-        font-size: 36px;
-        line-height: 36px;
+        font-size: 26px;
+        line-height: 26px;
     }
     .proposition a {
         margin: 20px auto;

@@ -80,6 +80,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 0px 27px 0px 27px;
+    z-index: 4;
 }
 
 .main-navigation ul {
@@ -292,18 +293,25 @@ main {
 .main-container img {
     position: absolute;
     z-index: -1;
-    margin-bottom: auto;
-    height: auto;
-    max-width: 100%;
-    top:-23%;
+   
+   
+    width: auto;
+    top:-570px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
 }
-.ice-cream-2 { display: none;}
-.ice-cream-3 { display: none;}
-.ice-cream-1 { display: none;}
+.ice-cream-2 { visibility: hidden;}
+.ice-cream-3 { visibility: hidden;}
+.ice-cream-1 { visibility: hidden;}
    
 .show-image {
-    display: block;
+    visibility: visible;
 }
+.slider-point-1:checked ~ .ice-cream-1 {   visibility: visible;}
+.slider-point-2:checked ~ .ice-cream-2 {   visibility: visible;}
+.slider-point-3:checked ~ .ice-cream-3 {   visibility: visible;}
+
 
 .main-proposition h1 {
     display: inline-block;
@@ -314,8 +322,8 @@ main {
 .radio-btn {
     display: flex;
     position: absolute;
-    justify-content: space-between;
-    width: 80px;
+    justify-content: start;
+    width: 100%;
     height: 30px;
     left: 0;
     margin-left: 0px;
@@ -327,7 +335,7 @@ input[type="radio"] {
     height: 21px; 
     width: 21px;
     cursor: pointer;
-    z-index: 99;
+    z-index: 2;
     opacity: 0;
 }
 .radio-btn span {
@@ -338,9 +346,15 @@ input[type="radio"] {
     height: 21px; 
     width: 21px;
     overflow: hidden;
-    z-index: 98;
+    z-index: 1;
 }
 
+.radio-btn .slider-point-2 {
+    margin-left: 8px;
+}
+.radio-btn .slider-point-3 {
+    margin-left: 8px;
+}
 .slider-point-1 + span {
     margin-left: 0px;
 }
