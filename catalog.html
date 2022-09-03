@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/catalog.css">
     <link rel="stylesheet" media="screen and (color)" href="css/@media.css">
+    <script type="text/javascript" src="js/jquary.js"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 
     <title>Gllacy-catalog</title>
 </head>
@@ -125,21 +128,26 @@
                         <div class="sort">
                             <p>Сортировка:</p>
                             <form>  
-                                <label> </label>  
+                                <span class="triangl"></span>
                                 <select>  
                                     <option value = "1">по популярности</option>   
                                     <option value = "2">акционньіе предложения</option>    
                                     <option value = "3">без сахара</option>    
                                     <option value = "4">с доставкой</option>  
                                 </select>  
+                                
                             </form>  
                         </div>
                         <div class="sort-prise">
-                             <p>Сортировка:</p>
-                             <div>  
-                             </div>
-                         </div>
-                         <div class="sort-fat">
+                            <!--<p>Цена:</p>-->
+                            <div class="price-range-slider">
+                                <p class="range-value">
+                                  <input type="text" id="amount" readonly>
+                                </p>
+                                <div id="slider-range" class="range-bar"></div>
+                            </div>
+                        </div>
+                        <div class="sort-fat">
                             <p>Жирность:</p>
                             <form class="radio-btn">
                                 <input type="radio" class="slider-point-1" name="slider" checked>
@@ -163,15 +171,15 @@
                         <p>Наполнители:</p>
                         <div class="sort-filler">
                             <form class="chbox-btn">
-                                <input type="checkbox" class="checkbox-point-1" name="slider" checked>
+                                <input type="checkbox" class="checkbox-point-1" name="slider">
                                 <span></span>
-                                <input type="checkbox" class="checkbox-point-2" name="slider" checked>
+                                <input type="checkbox" class="checkbox-point-2" name="slider">
                                 <span></span>
-                                <input type="checkbox" class="checkbox-point-3" name="slider" checked>
+                                <input type="checkbox" class="checkbox-point-3" name="slider">
                                 <span></span>
-                                <input type="checkbox" class="checkbox-point-4" name="slider" checked>
+                                <input type="checkbox" class="checkbox-point-4" name="slider">
                                 <span></span>
-                                <input type="checkbox" class="checkbox-point-5" name="slider" checked>
+                                <input type="checkbox" class="checkbox-point-5" name="slider">
                                 <span></span>
                             </form>
                             <form><button class="sort-filler-button">Применить</button></form>
@@ -322,5 +330,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

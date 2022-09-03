@@ -440,6 +440,7 @@ input[type="radio"] {
 }
    
 /* populars */
+
 .populars {
     display: flex;
     flex-direction: row;
@@ -678,6 +679,7 @@ input[type="radio"] {
 }
 
 /* MAP */
+
 .map {
     position: relative;
     overflow:hidden;
@@ -691,13 +693,14 @@ input[type="radio"] {
     left: 47%;
     width: 80px;
     height: 140px;
+    z-index: 1;
 }
+
 .map .shadow {
     position: absolute;
-   
     background-image: url(../img/shadow.png);
     top: 30%;
-    left: 50%;
+    left: 47%;
     width: 182px;
     height: 110px;
 }
